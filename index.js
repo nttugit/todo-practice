@@ -8,9 +8,11 @@ import connectDB from './utils/db.js';
 connectDB();
 
 import userRouter from './routes/user.route.js';
+import todoRouter from './routes/todo.route.js';
 
 app.use(express.json());
 app.use('/users', userRouter);
+app.use('/todos', todoRouter);
 
 app.get('/', (req, res) => {
     res.send('Hello World!');

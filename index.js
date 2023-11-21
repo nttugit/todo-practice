@@ -1,10 +1,10 @@
 import express from 'express';
 // Thư viện giúp sử dụng biến môi trường trong file .env
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config(); //Khai ba
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 9999; //Mặc định là port 3000
 // Kết nối database
 import connectDB from './utils/db.js';
 

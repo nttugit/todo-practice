@@ -12,12 +12,14 @@ import connectDB from './utils/db.js';
 import userRouter from './routes/user.route.js';
 import todoRouter from './routes/todo.route.js';
 import todoTuRouter from './routes/todotu.route.js';
+import todoVinhRouter from './routes/todovinh.route.js';
 
 // Giúp gửi dữ liệu với method POST
 app.use(express.json());
 app.use('/users', userRouter);
 app.use('/todos', todoRouter);
 app.use('/todos-tu', todoTuRouter);
+app.use('/todos-vinh', todoVinhRouter);
 
 app.get('/', (req, res) => {
     res.send('Hello World!');

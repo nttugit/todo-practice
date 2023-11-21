@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const todoSchema = new Schema({
     title: String,
-    completed: String,
+    completed: Boolean,
 });
 
 const Todo = mongoose.model('todo', todoSchema);
